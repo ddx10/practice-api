@@ -9,3 +9,6 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
+app.get('/about', (req, res) => {
+    res.send('Esta es la página About');
+});
